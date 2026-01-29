@@ -5,6 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // ← INI WAJIB UNTUK TAILWIND V4
+    tailwindcss(),
   ],
+
+  optimizeDeps: {
+    include: ['react-data-table-component'],
+  },
 })
